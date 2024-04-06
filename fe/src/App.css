@@ -232,3 +232,221 @@ body {
 .modal-content button.cancel-button:hover {
   background-color: #333; /* Darker black color on hover */
 }
+
+/* Header Styles */
+#header {
+  background: #000;
+  height: 80px;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header .logo {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#header .nav-menu ul li {
+  position: relative;
+  margin: 0 15px;
+}
+
+#header .nav-menu ul li a {
+  color: #fff;
+  transition: 0.3s;
+  padding: 10px 0;
+}
+
+#header .nav-menu ul li.active a {
+  color: #00bcd4;
+}
+
+#header .nav-menu ul li:hover > a {
+  color: #00bcd4;
+}
+
+/* Hero Section Styles */
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: #000 url("hero.png") center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-right: 10px;
+  border: 2px solid #00bcd4;
+  color: #00bcd4;
+}
+
+#hero .btn-get-started:hover {
+  background: #00bcd4;
+  color: #fff;
+}
+/* Other styles */
+/* Add any other styles you have here */
+.adduser-input::placeholder {
+  color: #999; /* Adjust the color as needed */
+}
+.adduser-input[type="date"] {
+  color: #999; /* Placeholder color */
+}
+/* AddUserPage Styling */
+.adduser-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.adduser-container h2 {
+  grid-column: span 2;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.adduser-container label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.adduser-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.adduser-button {
+  grid-column: span 2;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.adduser-button:hover {
+  background-color: #0056b3;
+}
+
+.response-message {
+  position: fixed;
+  top: 20px; /* Display from top */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.response-message.show {
+  opacity: 1;
+}
+
+.result {
+  grid-column: span 2;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .adduser-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.adduser-button {
+  grid-column: span 2;
+  width: 100%;
+  padding: 10px;
+  background-color: #977c64; /* Adjust background color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Add transition */
+}
+
+.adduser-button:hover {
+  background-color: #6e5847; /* Adjust hover background color */
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.top-div,
+.bottom-div {
+  flex: 1;  /* Makes both divs take up equal space */
+}
+
+.bottom-div {
+  background-color: lightgreen;
+}
